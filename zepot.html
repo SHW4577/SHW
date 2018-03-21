@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style>
+			#d1 {
+				width: 200px;
+				height: 200px;
+				background-color: purple;
+			}
+		</style>
+	</head>
+		<script src="../zepto/zepto.min.js"></script>
+		<script src="touch.js"></script>
+		
+		
+	<body>
+		<div id="d1">
+			柴睿英、苏世洪
+			<p id="p1"></p>
+		</div>
+		
+		
+		<script>
+		
+			//页面元素加载后执行
+			Zepto(function($) {
+				//获取的是一个数组
+				var d1 = $("#d1")[0];
+
+				//console.log(d1)
+
+				//将命名转换为驼峰命名
+				var n = $.camelCase("hello-people");
+
+				//console.log(n)
+
+				var p1 = $("#p2")[0];
+				//检测指定的dom节点是否是第一个dom节点的子元素   true 或 false
+			    //console.log($.contains(d1,p1))
+
+
+				//$.each([ "a",￼"b", "c"]),function(index,item){
+					//index  下标   item   元素
+					
+				// }
+				
+				//$.each([{name:"list",age:20,sex:"男"}]),function(key,value){
+					//key 键  value  值
+					
+				// }
+				
+				
+				//$.extend  如果字段一致  将会覆盖
+				//将source 拷贝到target  source本身不变
+				// var target = {name:"one"}
+				
+				//var source = {sex:"two"}
+				
+				//  $.extend(target,source);
+				
+				// console.log(target)
+				
+				// console.log(source)
+				
+				
+				
+				// $.map()  通过遍历集合中的元素  返回通过迭代函数的所有结果
+				
+				// var arr = [1,2,3,4,5];
+				
+				// var arr2 = $.map(arr,function(item,index){
+				//	return item*item;
+				// })
+				
+				// console.log(arr2)
+				
+				
+				/************点击***********/
+				//tap  点击
+//				 $("#d1").tap(function(){
+//				 	
+//					console.log("点击")
+//					
+//				})
+				
+//				singleTap  单击
+//				$("#d1").singleTap(function(){
+//					var e = e || window.event
+//					console.log(e)
+//					$(this).css({"background":"red"})
+//				})
+				
+				//doubleTap
+//				$("#d1").doubleTap(function(){
+//					
+//					console.log("双击")
+//				})
+				
+				
+//				longTap  750ms
+
+//				$("#d1").longTap(function(){
+//					console.log("长按 750ms")
+//				})
+
+				
+				/**********轻扫***********/
+				
+				
+				//swipe  轻扫
+				
+				document.addEventListener("touchmove",function(ev){
+					ev = ev || window.event;
+					ev.preventDefault();
+				},{passive:aflse})
+				
+				
+//				阻止系统默认滑动事件
+			// touchstart  开始触摸
+			// touchmove   手指移动
+			// touchend    触摸结束
+				
+				document.addEventListenter("touchstart")
+				
+				
+				
+			
+			})
+		</script>
+	</body>
+
+</html>

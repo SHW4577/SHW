@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="swiper.min.css" />
+		<link rel="stylesheet" href="tao.css" />
+	</head>
+
+	<body>
+		<script src="swiper.min.js"></script>
+
+		<!--头部-->
+		<header>
+			<div class="nav">
+				<div>北京</div>
+				<div>
+					<input type="text" placeholder="山西风景最美丽" />
+				</div>
+				<div>消息</div>
+			</div>
+		</header>
+
+		<!--轮播图-->
+		<div class="swiper-container t-1">
+			<div class="swiper-wrapper t-2">
+
+				<div class="swiper-slide t-3">
+					<img src="img/b01.jpg" alt="" />
+				</div>
+				<div class="swiper-slide t-3">
+					<img src="img/b02.jpg" alt="" />
+				</div>
+				<div class="swiper-slide t-3">
+					<img src="img/b03.jpg" alt="" />
+				</div>
+
+			</div>
+		</div>
+
+		<!--列表图标-->
+		<section>
+			<ul>
+				<li>
+					<img src="img/index/icon_03.png" alt="" />
+					<p>签到</p>
+				</li>
+				<li>
+					<img src="img/index/icon_05.png" alt="" />
+					<p>签到</p>
+				</li>
+				<li>
+					<img src="img/index/icon_07.png" alt="" />
+					<p>签到</p>
+				</li>
+				<li>
+					<img src="img/index/icon_09.png" alt="" />
+					<p>签到</p>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<img src="img/index/icon_15.png" alt="" />
+					<p>签到</p>
+				</li>
+				<li>
+					<img src="img/index/icon_16.png" alt="" />
+					<p>签到</p>
+				</li>
+				<li>
+					<img src="img/index/icon_17.png" alt="" />
+					<p>签到</p>
+				</li>
+				<li>
+					<img src="img/index/icon_18.png" alt="" />
+					<p>签到</p>
+				</li>
+			</ul>
+		</section>
+
+		<!--新闻-->
+		<div class="text">
+			<div class="lef">
+				大麦头条
+			</div>
+			<div class="rig">
+				<div class="swiper-container s-1">
+					<div class="swiper-wrapper s-2">
+
+						<div class="swiper-slide s-3">
+							中国银行惊喜连连!
+						</div>
+						<div class="swiper-slide s-3">
+							中国银行惊喜连连!
+						</div>
+						<div class="swiper-slide s-3">
+							中国银行惊喜连连! 
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--最新推荐-->
+		<div class="bt">
+			最新推荐
+		</div>
+		
+		
+		<!--标题下的图书-->
+		<div class="swiper-container u-1">
+			<div class="swiper-wrapper u-2">
+
+				<div class="swiper-slide u-3">
+					<ul>
+						<li>
+							<img src="img/index/tj02.png" alt="" />
+							<p>新豪华影视...</p>
+							<span>快来钱够!</span>
+						</li>
+						<li>
+							<img src="img/index/tj04.png" alt="" />
+							<p>新豪华影视...</p>
+							<span>快来钱够!</span>
+						</li>
+						<li>
+							<img src="img/index/tj03.png" alt="" />
+							<p>新豪华影视...</p>
+							<span>快来钱够!</span>
+						</li>
+					</ul>
+				</div>
+				<div class="swiper-slide u-3">
+					<ul>
+						<li>
+							<img src="img/index/tj02.png" alt="" />
+							<p>新豪华影视...</p>
+							<span>快来钱够!</span>
+						</li>
+						<li>
+							<img src="img/index/tj04.png" alt="" />
+							<p>新豪华影视...</p>
+							<span>快来钱够!</span>
+						</li>
+						<li>
+							<img src="img/index/tj03.png" alt="" />
+							<p>新豪华影视...</p>
+							<span>快来钱够!</span>
+						</li>
+					</ul>
+				</div>
+				<div class="swiper-slide u-3">
+					<ul>
+						<li>
+							<img src="img/index/tj02.png" alt="" />
+							<p>新豪华影视...</p>
+							<span>快来钱够!</span>
+						</li>
+						<li>
+							<img src="img/index/tj04.png" alt="" />
+							<p>新豪华影视...</p>
+							<span>快来钱够!</span>
+						</li>
+						<li>
+							<img src="img/index/tj03.png" alt="" />
+							<p>新豪华影视...</p>
+							<span>快来钱够!</span>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+		
+		<!--猜你喜欢-->
+		<div class="bt">
+			猜你喜欢
+		</div>
+		
+		<!--猜你喜欢下的列表-->
+		
+		
+		
+		
+	</body>
+
+	<script>
+		var swiper = new Swiper(".t-1", {
+
+			autoplay: 3000,
+		})
+		
+		
+		var swiper1 = new Swiper(".s-1", {
+
+			autoplay: 3000,
+			
+			direction:"vertical"
+		})
+		
+		var swiper2 = new Swiper(".u-1", {
+
+			autoplay: 3000,
+		})
+	</script>
+
+</html>
